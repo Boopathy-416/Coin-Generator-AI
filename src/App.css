@@ -1,0 +1,38 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+
+/* font assets here */
+@font-face {
+  font-family: 'Malinga';
+  src: url('public/fonts/Malingafree-EaZG9.otf') format('truetype');
+}
+
+/* font assets here */
+@font-face {
+  font-family: 'Marlboro';
+  src: url('public/fonts/Marlboro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'frace';
+  src: url('/fonts/FranieVariableTest-SemiBold-BF64c31f3d7b0b9.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Marvel';
+  src: url('public/fonts/MarvelRegular-Dj83.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'objectsans';
+  src: url('public/fonts/ObjectSans-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Akira';
+  src: url('public/fonts/Akira Expanded Demo.otf') format('truetype');
+}
