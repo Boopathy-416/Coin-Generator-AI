@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCoin</title>
+    <script type="module" crossorigin src="/assets/index-BDy9IOfn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BWwVMCRO.css">
+  </head>
+  <style>
+      .cursor {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #bb5932, #ffb14c, rgb(255, 162, 46));
+      pointer-events: none;
+      filter: blur(10px);
+      z-index: 9999;
+    }
+  </style>
+  <body>
+    <div class="cursor"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+
+      const cursor = document.querySelector('.cursor');
+  
+      // Track mouse movement
+      document.addEventListener('mousemove', (e) => {
+        gsap.to(cursor, {
+          x: e.clientX - 10, // Adjust to center
+          y: e.clientY - 10,
+          duration: 0.8, // Smooth transition time
+          ease: 'power2.out', // Smooth easing
+        });
+      });
+    </script>
+
+    <!-- .font-serif {
+      font-family: 'Playfair Display', serif;
+    } -->
+
+
+    <div id="root"></div>
+  </body>
+</html>
